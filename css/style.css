@@ -242,6 +242,28 @@ body {
     display: inline-flex;
     flex-shrink: 0;
 }
+.social-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+.social-head {
+    display: inline-flex;
+    font-weight: 500px;
+    margin: 0;
+    padding-top: 0;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    color: var(--WHITE);
+    padding-left: 40px;
+    padding-bottom: 16px;
+}
+.social-list {
+    display: inline-flex;
+    list-style: none;
+    gap: 16px;
+    margin: 0;
+}
 /* end of footer */
 
 /* start general styling for Portfolio page */
