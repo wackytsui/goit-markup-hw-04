@@ -56,6 +56,7 @@ body {
 .link:hover,
 .link:focus {
     color: var(--IRIS);
+    cursor: pointer;
 }
 .hero {
     background-image: url(/images/Dark-bg.png), url(/images/people-office.png);
@@ -79,6 +80,7 @@ body {
 .hero-btn:hover,
 .hero-btn:focus {
     background-color: var(--button);
+    cursor: pointer;
 }
 .body-text-list,
 .body-feature-list,
@@ -280,6 +282,10 @@ body {
 .customer-list img {
     width: 168px;
     height: 88px;
+}
+.customer-list li img:hover {
+    cursor: pointer;
+    background-color: black;
 }
 /* end of customer section */
 
