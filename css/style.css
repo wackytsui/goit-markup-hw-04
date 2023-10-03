@@ -9,6 +9,7 @@
     --ACTIVE: #ff0000;
     --CORNFLOWER: #E7E9FC;
     --GREY: rgba(46, 47, 66, 0.70);
+    --GREEN: #31D0AA;
 }
 /* start of general styling */
 body {
@@ -322,6 +323,22 @@ body {
     margin: 0;
     gap: 16px;
     list-style: none;
+}
+.social-list li {
+    display: inline-flex;
+    height: 40px;
+    background-color: var(--IRIS);
+    width: 40px;
+    border: 1px solid var(--IRIS);
+    border-radius: 50%;
+}
+.social-list li:hover{
+    background-color: var(--GREEN);
+    border-color: var(--GREEN);
+}
+.icons {
+    padding: 10px;
+    fill: var(--CLOUD);
 }
 /* end of footer */
 
