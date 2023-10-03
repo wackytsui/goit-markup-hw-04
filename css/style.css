@@ -1,5 +1,6 @@
 :root {
     --IRIS: #4D5AE5;
+    --OCEAN: #404BBF;
     --button: #2f3eec;
     --NAVY-BLUE: #2E2F42;
     --CLOUD: #F4F4FD;
@@ -7,6 +8,7 @@
     --SLATE: #434455;
     --ACTIVE: #ff0000;
     --CORNFLOWER: #E7E9FC;
+    --GREY: rgba(46, 47, 66, 0.70);
 }
 /* start of general styling */
 body {
@@ -17,6 +19,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.32px;
     width: 1440px;
+    height: 3200px;
     margin: auto;
 }
 .logo {
@@ -35,7 +38,8 @@ body {
     color: var(--NAVY-BLUE);
 }
 .nav-list,
-.nav-contact {
+.nav-contact,
+.customer-list {
     margin: 0;
     list-style: none;
     padding-left: 0;
@@ -54,7 +58,7 @@ body {
     color: var(--IRIS);
 }
 .hero {
-    background-color: var(--NAVY-BLUE);
+    background-image: url(/images/Dark-bg.png), url(/images/people-office.png);
 }
 .hero-text {
     color: var(--WHITE);
@@ -78,7 +82,7 @@ body {
 }
 .body-text-list,
 .body-feature-list,
-.body-team-list {
+.body-team-list{
     list-style: none;
     padding-left: 0;
 }
@@ -95,6 +99,16 @@ body {
     letter-spacing: 0.72px;
     text-transform: capitalize;
     text-align: center;
+}
+.customer-head{
+    color: var(--NAVY-BLUE, #2E2F42);
+        text-align: center;
+        font-family: Roboto;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.111;
+        letter-spacing: 0.72px;
+        text-transform: capitalize;
 }
 .footer-page,
 .footer-page span:nth-child(2) {
@@ -113,6 +127,10 @@ body {
     align-items: center;
     justify-content: center;
 }
+.nav-parent {
+    display: inline-flex;
+
+}
 .logo {
     display: inline-flex;
     height: 24px;
@@ -128,7 +146,8 @@ body {
     padding-inline-start: 350px;
     gap: 40px;
 }
-/* end of navigation positionine */
+
+/* end of navigation positioning */
 
 /* start of hero section */
 .hero {
@@ -155,15 +174,27 @@ body {
     align-items: center;
     justify-content: center;
     background-color: var(--WHITE);
+    padding-top: 120px;
 }
 .body-text-list li {
     display: inline-flex;
     flex-direction: column;
     width: 264px;
     padding-left: 24px;
+    gap: 8px;
 }
-.body-text-list li h3{
-    margin-bottom: 0;
+.body-text-list li h3,
+.body-text-list li p{
+    margin: 0;
+}
+.body-img{
+    display: flex;
+    justify-content: center;
+    width: 264px;
+    height: 112px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: var(--CLOUD);
 }
 /* end of section 1 */
 
@@ -175,21 +206,19 @@ body {
     justify-content: center;
     flex-direction: column;
     background-color: var(--WHITE);
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 .body-feature-list {
     display: inline-flex;
     gap: 20px;
-}
-.body-feature-list li {
-    border: 1px solid var(--CORNFLOWER);
-    background: url(<path-to-image>), lightgray -72.845px -19px / 144.444% 112.667% no-repeat;
 }
 /* end of section 2 */
 
 /* start of section 3 */
 .body-team {
     display: flex;
-    height: 732px;
+    height: 788px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -228,42 +257,71 @@ body {
     flex-direction: column;
     margin: 0;
 }
+.team-social {
+    display: inline-flex;
+    gap: 24px;
+}
 /* end of section 3 */
+
+/* start of customer section */
+.customer-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 120px;
+    padding-top: 120px;
+    gap: 72px;
+}
+.customer-list{
+    display: inline-flex;
+    justify-content: center;
+    gap: 24px;
+}
+.customer-list img {
+    width: 168px;
+    height: 88px;
+}
+/* end of customer section */
 
 /* start of footer */
 .footer-page {
     display: flex;
     height: 312px;
-    align-items: center;
     padding-inline-start: 156px;
     padding-inline-end: 156px;
 }
-.footer .logo{
-    display: inline-flex;
-    flex-shrink: 0;
-}
-.social-container {
+.footer {
     display: flex;
     flex-direction: column;
-    position: absolute;
+    padding-top: 101.5px;
+}
+.logo{
+    display: inline-flex;
+    height: 24px;
+    width: 115px;
+}
+.social-container {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 100px;
+    padding-left: 120px;
 }
 .social-head {
-    display: inline-flex;
-    font-weight: 500px;
-    margin: 0;
-    padding-top: 0;
+    font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.32px;
-    color: var(--WHITE);
-    padding-left: 40px;
-    padding-bottom: 16px;
-}
-.social-list {
-    display: inline-flex;
-    list-style: none;
-    gap: 16px;
+    padding: 0;
     margin: 0;
 }
+.social-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 16px;
+    list-style: none;
+}
+
 /* end of footer */
 
 /* start general styling for Portfolio page */
