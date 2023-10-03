@@ -55,7 +55,7 @@ body {
 }
 .link:hover,
 .link:focus {
-    color: var(--IRIS);
+    color: var(--OCEAN);
     cursor: pointer;
 }
 .hero {
@@ -79,7 +79,7 @@ body {
 }
 .hero-btn:hover,
 .hero-btn:focus {
-    background-color: var(--button);
+    background-color: var(--OCEAN);
     cursor: pointer;
 }
 .body-text-list,
@@ -282,10 +282,6 @@ body {
 .customer-list img {
     width: 168px;
     height: 88px;
-}
-.customer-list li img:hover {
-    cursor: pointer;
-    background-color: black;
 }
 /* end of customer section */
 
