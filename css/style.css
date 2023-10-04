@@ -10,6 +10,7 @@
     --CORNFLOWER: #E7E9FC;
     --GREY: rgba(46, 47, 66, 0.70);
     --GREEN: #31D0AA;
+    --LIGHT-SLATE: #8E8F99;
 }
 /* start of general styling */
 body {
@@ -195,9 +196,12 @@ body {
     justify-content: center;
     width: 264px;
     height: 112px;
-    flex-shrink: 0;
-    border-radius: 4px;
+    border-radius: 4px 4px 0 0;
     background: var(--CLOUD);
+}
+.icons-body {
+    display: inline-flex;
+    padding: 24px 100px;
 }
 /* end of section 1 */
 
@@ -261,8 +265,29 @@ body {
     margin: 0;
 }
 .team-social {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 16px;
+    list-style: none;
+}
+.team-social li {
     display: inline-flex;
     gap: 24px;
+    height: 40px;
+    background-color: var(--IRIS);
+    width: 40px;
+    border: 1px solid var(--IRIS);
+    border-radius: 50%;
+}
+.icons-team {
+    padding: 10px;
+        fill: var(--CLOUD);
+}
+.team-social li:hover {
+    cursor: pointer;
+    background-color: var(--OCEAN);
+    border-color: var(--OCEAN);
 }
 /* end of section 3 */
 
@@ -280,9 +305,24 @@ body {
     justify-content: center;
     gap: 24px;
 }
-.customer-list img {
+.customer-list li {
+    display: inline-flex;
     width: 168px;
     height: 88px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid var(--LIGHT-SLATE);
+}
+.icons-customer {
+    padding: 16px 32px;
+    width: 104px;
+    height: 56px;
+}
+.icons-customer:hover,
+.customer-list li:hover {
+    border-color: var(--OCEAN);
+    cursor: pointer;
+    fill: var(--OCEAN);
 }
 /* end of customer section */
 
@@ -333,6 +373,7 @@ body {
     border-radius: 50%;
 }
 .social-list li:hover{
+    cursor: pointer;
     background-color: var(--GREEN);
     border-color: var(--GREEN);
 }
