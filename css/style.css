@@ -324,6 +324,9 @@ body {
     cursor: pointer;
     fill: var(--OCEAN);
 }
+.customer-list svg use {
+    fill: var(--GREEN);
+}
 /* end of customer section */
 
 /* start of footer */
@@ -381,6 +384,7 @@ body {
     padding: 10px;
     fill: var(--CLOUD);
 }
+
 /* end of footer */
 
 /* start general styling for Portfolio page */
