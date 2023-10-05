@@ -12,6 +12,10 @@
     --GREEN: #31D0AA;
     --LIGHT-SLATE: #8E8F99;
 }
+* {
+    margin: 0;
+    padding: 0;
+}
 /* start of general styling */
 body {
     font-family: "Roboto", sans-serif;
@@ -59,6 +63,11 @@ body {
 .link:focus {
     color: var(--OCEAN);
     cursor: pointer;
+}
+.nav-link:hover {
+    padding-bottom: 20px;
+    border-radius: 2px;
+    border-bottom: 4px solid var(--OCEAN);
 }
 .hero {
     background-image: url(/images/Dark-bg.png), url(/images/people-office.png);
