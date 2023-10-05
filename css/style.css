@@ -324,9 +324,6 @@ body {
     cursor: pointer;
     fill: var(--OCEAN);
 }
-.customer-list svg use {
-    fill: var(--GREEN);
-}
 /* end of customer section */
 
 /* start of footer */
