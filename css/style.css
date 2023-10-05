@@ -71,7 +71,7 @@ body {
 }
 .hero {
     background: var(--GREY);
-    background-image: url(/images/people-office.jpg);
+    background-image: url(../images/people-office.jpg);
     background-blend-mode: darken;
 }
 .hero-text {
