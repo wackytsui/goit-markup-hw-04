@@ -317,6 +317,7 @@ body {
     padding: 16px 32px;
     width: 104px;
     height: 56px;
+    fill: var(--LIGHT-SLATE);
 }
 .icons-customer:hover,
 .customer-list li:hover {
