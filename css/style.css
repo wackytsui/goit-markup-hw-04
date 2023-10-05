@@ -70,7 +70,7 @@ body {
     border-bottom: 4px solid var(--OCEAN);
 }
 .hero {
-    background-image: url(/images/Dark-bg.png), url(/images/people-office.png);
+    background-image: url(/images/Dark-bg.png), url(/images/people-office.jpg);
 }
 .hero-text {
     color: var(--WHITE);
@@ -169,6 +169,7 @@ body {
     justify-content: center;
     flex-direction: column;
     text-transform: uppercase;
+    width: 1440px;
     height: 600px;
     flex-shrink: 0;
 }
