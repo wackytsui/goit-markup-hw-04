@@ -70,7 +70,9 @@ body {
     border-bottom: 4px solid var(--OCEAN);
 }
 .hero {
-    background-image: url(/images/Dark-bg.png), url(/images/people-office.jpg);
+    background: var(--GREY);
+    background-image: url(/images/people-office.jpg);
+    background-blend-mode: darken;
 }
 .hero-text {
     color: var(--WHITE);
